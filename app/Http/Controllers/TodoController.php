@@ -15,7 +15,7 @@ class TodoController extends Controller
 
         $data = [
             'message' => 'To-do has been created',
-            'todo' => $this->mapTodoResponse($todo)
+            'todo' => $this->mapTodoResponse($todo),
         ];
 
         return response()->json($data, 201);
@@ -25,7 +25,7 @@ class TodoController extends Controller
     {
         $data = [
             'message' => 'Retrieved To-do',
-            'todo' => $this->mapTodoResponse($todo)
+            'todo' => $this->mapTodoResponse($todo),
         ];
 
         return response()->json($data);
@@ -40,7 +40,7 @@ class TodoController extends Controller
 
         $data = [
             'message' => 'To-do has been updated',
-            'todo' => $this->mapTodoResponse($todo)
+            'todo' => $this->mapTodoResponse($todo),
         ];
 
         return response()->json($data);
@@ -51,7 +51,7 @@ class TodoController extends Controller
         $todo->delete();
 
         $data = [
-            'message' => 'To-do has been deleted'
+            'message' => 'To-do has been deleted',
         ];
 
         return response()->json($data);
@@ -60,7 +60,7 @@ class TodoController extends Controller
     protected function rules()
     {
         return [
-            'name' => 'required|string|min:4'
+            'name' => 'required|string|min:4',
         ];
     }
 
@@ -69,7 +69,7 @@ class TodoController extends Controller
         return [
             'id' => $todo->id,
             'name' => $todo->name,
-            'completed' => $todo->completed
+            'completed' => $todo->completed,
         ];
     }
 }

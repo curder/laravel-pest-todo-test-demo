@@ -28,7 +28,7 @@ it('can fetch a to-do', function () {
             'id' => $todo->id,
             'name' => $todo->name,
             'completed' => $todo->completed,
-        ]
+        ],
     ];
 
     $response->assertStatus(200)->assertJson($data);
