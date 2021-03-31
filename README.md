@@ -1,5 +1,8 @@
 # 使用 pest 测试 Laravel API
 
+[![GitHub Tests Action Status](https://github.com/curder/laravel-pest-todo-test-demo/actions/workflows/run-test.yml/badge.svg)](https://github.com/curder/laravel-pest-todo-test-demo/actions?query=run-test%3Amaster)
+[![GitHub Code Style Action Status](https://github.com/curder/laravel-pest-todo-test-demo/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/curder/laravel-livewire-screencasts-demo/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+
 [Pest](https://pestphp.com/) 是 [Nuno Maduro](https://twitter.com/enunomaduro) 开发的一个新的测试PHP框架。
 
 虽然 Pest 本身是建立在流行的PHP测试框架 PHPUnit 之上，但 Pest 旨在为编写测试提供更好的体验，哲学很简单。
